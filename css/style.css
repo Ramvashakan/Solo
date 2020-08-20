@@ -1,0 +1,260 @@
+/*============================================= 
+
+Colors:
+
+    1)Moon Yellow: #f4c613
+    2)Grey: #212226
+    3)White Smoke: #f4f4f4
+    4)White: #fff
+    5)Black #000 
+
+================================================*/
+
+/*============================================= 
+                PreLoader
+================================================*/
+
+#preloader {
+
+    background-color: white;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 9999;
+
+}
+
+#status {
+
+    background-image: url('../imgs/preloader/preloader.gif');
+    background-repeat: no-repeat;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -35px;
+    margin-left: -35px;
+
+}
+
+
+/*============================================= 
+               Home
+================================================*/
+
+#home {
+    background: none;
+    height: 100%;
+
+}
+
+
+#home_bg_video {
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    background: url("../video/solo.jpg") no-repeat;
+    background-size: cover;
+
+}
+
+#home_overlay {
+
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+}
+
+#home_content {
+
+    height: 100%;
+    width: 100%;
+    display: table;
+}
+
+#home_content_inner {
+    vertical-align: middle;
+    display: table-cell;
+
+}
+
+#home_heading h1 {
+    color: #fff;
+    font-size: 65px;
+    text-transform: uppercase;
+    font-weight: 100;
+    margin: 0;
+    display: inline-block;
+}
+
+#home_heading h1 span {
+
+    color: #f4c613;
+    font-weight: 500;
+}
+
+#home_text p {
+    color: #fff;
+    font-size: 17px;
+    font-weight: 100;
+    margin: 8px 0 30px 0;
+}
+
+/*============================================= 
+               html,body
+================================================*/
+
+html,
+body {
+    height: 100%;
+
+}
+
+body {
+
+    color: #212226;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Raleway, sans-serif;
+}
+
+p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+section {
+    background: #fff;
+    overflow: hidden;
+}
+
+
+/*============================================= 
+              Buttons
+================================================*/
+
+.btn-general {
+
+    font-family: 'Raleway', sans-serif;
+    border-radius: 28px;
+    font-size: 13px;
+    text-transform: uppercase;
+    margin: 0 6px;
+    padding: 12px 46px 12px 46px;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+
+.btn-home {
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.btn-home:hover,
+.btn-home:focus {
+    color: #fff;
+    background-color: #f4c613;
+    border: 1px solid #f4c613;
+}
+
+/*============================================= 
+              Arrow Down
+================================================*/
+
+#arrow_down {
+
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    color: #fff;
+    font-size: 32px;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    margin-left: -16px;
+    z-index: 1;
+}
+
+#arrow_down:hover,
+#arrow_down:focus {
+    color: #f4c613;
+}
+
+
+
+/*============================================= 
+              About 01
+================================================*/
+
+.content-box-lg{
+
+    padding: 120px 0;
+
+}
+
+.vertical-heading h5{
+
+    color: #f4c613;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    word-spacing: 9px;
+    display: inline-block;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    position: relative;
+    top: 60px;
+    left: -65px;
+    
+}
+.vertical-heading h2 {
+
+    margin: 0 0 0 35px;
+    font-size: 42px;
+    font-weight: 100;
+    line-height: 45px;
+}
+
+#about-right p:first-child{
+
+    margin-bottom: 30px;
+
+}
+#about-bottom{
+    margin-top: 60px;
+}
+
+
+#about-bottom img{
+
+    margin: 0 auto;
+
+
+}
+
+
