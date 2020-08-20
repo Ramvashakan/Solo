@@ -418,47 +418,7 @@ section {
 .team-member:hover .team-member-overlay{
 
     opacity: 1;
-
-
 }
-
-.owl-nav{
-    
-    position: relative;
-    margin-left: 50%;
-    top: 20px;
-    right: 25px;
-    display: inline-block;
-    
-    }
-
-.owl-next, .owl-prev{
-    position: absolute;  
-    font-size: 20px;
-    
-    padding: 5px;
-    height: 40px;
-    text-align: center;
-    transition: all 300ms linear;
-    display: inline-block;
-
-
-}
-
-
-.owl-next{
-    left: 20px;
-}
-
-.owl-next:hover, .owl-prev:hover{
-
-    background-color: #212226;
-    opacity: 0.5;
-    color: #fff;
-   
-}
-
-
 
 /*============================================= 
                 Social Icons
@@ -515,4 +475,85 @@ ul.social-list li:nth-child(3) a:hover {
     
 
 }
+
+
+/*============================================= 
+                Owl Theme
+================================================*/
+
+
+.owl-theme .owl-nav [class*='owl-']{
+
+    color: #212226;
+    background:none;
+    font-size: 40px;
+    margin: 0;
+
+}
+
+.owl-theme .owl-nav [class*='owl-']:hover{
+
+    background: none;
+    color: #212226;
+}
+
+
+
+
+/*============================================= 
+                Skill Section
+================================================*/
+
+.skill{
+
+    margin-bottom: 20px;
+    
+}
+
+.skill h4{
+
+    line-height: 62px;
+    margin: 0;
+    font-weight: normal;
+}
+
+.progress{
+
+    height: 25px;
+    border-radius: 0;
+    background: #efefef;
+    overflow: visible;
+
+}
+
+.progress-bar {
+    position: relative;
+    background: #f4c613;
+    
+}
+.progress-bar span{
+
+    font-size: 11px;
+    font-weight: 100;
+    font-family: "Open Sans",sans-serif;
+    background: #212226;
+    padding: 3px;
+    position: absolute;
+    left: 97%;
+    top: -47px;
+}
+
+.progress-bar span:before{
+
+    content: "";
+    border-top: 8px solid #212226;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    position: absolute;
+    bottom: -8px;
+    left: 23%;
+
+}
+
+
 

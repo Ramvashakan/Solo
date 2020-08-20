@@ -3,7 +3,7 @@
                 PreLoader
 ================================================*/
 
-$(window).on('load', () => {  //website to load fully
+$(window).on('load',function()  {  //website to load fully
 
     $('#status').fadeOut();    //gif will be faded
 
@@ -15,7 +15,7 @@ $(window).on('load', () => {  //website to load fully
                 Team
 ================================================*/
 
-$(()=>{
+$(function(){
 
     $("#team-members").owlCarousel({
 
@@ -26,9 +26,37 @@ $(()=>{
         autoplayHoverPause:true,
         nav: true,
         dots: false,
-        navText: ['<i class = "fa fa-angle-left left"></i>','<i class="fa fa-angle-right left"></i>']
+        navText: ['<i class = "fa fa-angle-left"></i>','<i class="fa fa-angle-right "></i>']
 
     });
+
+});
+
+
+/*============================================= 
+                Progress bars
+================================================*/
+
+$(function(){
+
+
+    $("#progress-elements").waypoint(function(){
+
+
+    $(".progress-bar").each(function(){
+
+        $(this).animate({
+
+            width: $(this).attr("aria-valuenow") + "%"
+        }, 1000);
+
+    });
+
+    this.destroy();
+
+    }, {offset: 'bottom-in-view' });
+
+
 
 });
 
