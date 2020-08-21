@@ -3,7 +3,7 @@
                 PreLoader
 ================================================*/
 
-$(window).on('load',function()  {  //website to load fully
+$(window).on('load', function () {  //website to load fully
 
     $('#status').fadeOut();    //gif will be faded
 
@@ -15,18 +15,18 @@ $(window).on('load',function()  {  //website to load fully
                 Team
 ================================================*/
 
-$(function(){
+$(function () {
 
     $("#team-members").owlCarousel({
 
-        items:2,
+        items: 2,
         autoplay: true,
-        smartSpeed:700,
+        smartSpeed: 700,
         loop: true,
-        autoplayHoverPause:true,
+        autoplayHoverPause: true,
         nav: true,
         dots: false,
-        navText: ['<i class = "fa fa-angle-left"></i>','<i class="fa fa-angle-right "></i>']
+        navText: ['<i class = "fa fa-angle-left"></i>', '<i class="fa fa-angle-right "></i>']
 
     });
 
@@ -37,26 +37,40 @@ $(function(){
                 Progress bars
 ================================================*/
 
-$(function(){
+$(function () {
 
 
-    $("#progress-elements").waypoint(function(){
+    $("#progress-elements").waypoint(function () {
 
 
-    $(".progress-bar").each(function(){
+        $(".progress-bar").each(function () {
 
-        $(this).animate({
+            $(this).animate({
 
-            width: $(this).attr("aria-valuenow") + "%"
-        }, 1000);
+                width: $(this).attr("aria-valuenow") + "%"
+            }, 1000);
 
-    });
+        });
 
-    this.destroy();
+        this.destroy();
 
-    }, {offset: 'bottom-in-view' });
+    }, { offset: 'bottom-in-view' });
 
 
 
 });
 
+/*============================================= 
+                Responsive Tabs 
+================================================*/
+
+
+$(function () {
+
+    $("#services-tabs").responsiveTabs({
+
+        animation: 'slide'
+
+    })
+
+});
