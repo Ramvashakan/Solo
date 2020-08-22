@@ -147,3 +147,80 @@ $(function () {
     });
 
 });
+
+
+/*============================================= 
+                Stats
+================================================*/
+
+$(function () {
+
+    $('.counter').counterUp({
+
+        delay: 10,
+        time: 2000
+
+    })
+
+})
+
+
+
+/*============================================= 
+                Clients
+================================================*/
+
+
+$(function () {
+
+    $("#clients-list").owlCarousel({
+
+        items: 6,
+        autoplay: false,
+        smartSpeed: 500,
+        loop: true,
+        autoplayHoverPause: true,
+        nav: true,
+        dots: false,
+        navText: ['<i class = "fa fa-angle-left"></i>', '<i class="fa fa-angle-right "></i>']
+
+    });
+
+});
+
+
+
+/*============================================= 
+                Google Map
+================================================*/
+
+$(window).on('load', function () {
+
+    var addStr = 'D-4 Sivanga Avenue Nethaji Nagar Madurai';
+    var myLatlng = { lat: 9.886233, lng: 78.031988 };
+
+    var map = new google.maps.Map(document.getElementById('map'), {
+
+        zoom: 11,
+        center: myLatlng
+
+    });
+
+    var marker = new google.maps.Marker({
+
+        position: myLatlng,
+        map: map,
+        title: "Click to see address"
+    });
+
+    var info = new google.maps.InfoWindow({
+        content: addStr
+    });
+
+    marker.addListener('click', function () {
+
+        info.open(map, marker);
+
+    })
+
+});
